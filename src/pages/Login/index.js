@@ -79,9 +79,9 @@ function Login() {
                 />
             </label>
             <label htmlFor='password'>
-                Password
+                Contraseña
                 <input
-                    type='text'
+                    type='password'
                     value={data.password}
                     onChange={handleInputChange}
                     name='password'
