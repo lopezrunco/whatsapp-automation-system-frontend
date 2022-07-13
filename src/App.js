@@ -1,6 +1,7 @@
 import { createContext, useReducer, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { HIDE_LOADER, LOGIN, LOGOUT, REFRESH_TOKEN, SHOW_LOADER } from './action-types'
+import Home from './pages/Home'
 import './App.css'
 
 // Pages
@@ -96,6 +97,10 @@ function App() {
       <div className="App">
         <p>Hi world!</p>
         <Routes>
+
+          <Route path='/home' element={
+            <Home />
+          } />
 
           <Route path='/login' element={
             <Login />
